@@ -1,0 +1,17 @@
+==================================================
+EE1010 Digital Clock Project Submission - References
+==================================================
+
+1. Component Datasheets & Logic Reference:
+   - 7447 BCD-to-7-Segment Decoder: [We followed the two pdfs our TA's have sent and also used Gemini and Chatgpt in areas of confusion ]
+   - Multiplexing Guides: [The pdfs shared with us]
+
+2. Development & Troubleshooting Tools:
+   - Compiler / IDE: [ Arduino IDE ]
+   - Code Syntax References: [Arduino Reference Manual, GVV sir's code, Gemini]
+
+3. Generative AI Tools Usage:
+   - Tool Used: [Gemini & ChatGPT]
+   - Purpose: [We used AI mostly for documentation purpose {like i asked it to be my project partner and discussed ideas on how the documentation should come out according to the given guidelines, for using GitHub, and even taking the idea of writing this reference doc in this way}, for understanding codes and their logics, learning new terminologies, and for one digital pins mapping image generation ]
+
+============================================================================================================================================
