@@ -1,0 +1,23 @@
+==================================================
+EE1010 Charger Project Submission - References
+==================================================
+
+1. Circuit assembly 
+   - Circuit diagram: From GVV sir's git repo.
+
+2. Testing and troubleshooting
+   - Digital multimeter: Used to test voltage, and circuit connections.
+   - ChatGPT and Google Gemini: Used to assist in diagnosing issues, understanding possible causes, and suggesting troubleshooting steps.
+
+3. Final case design
+   - OpenSCAD: Used to create the final parametric 3D design of the charger enclosure.
+
+4. AI-assisted modelling
+   - Google Gemini: Used to assist with 3D modelling ideas and modifications to the OpenSCAD design/code.
+
+5. Report preparation
+   - ChatGPT and Google Gemini: Used as writing assistance, to organise and refine selected report sections.
+
+Note: AI tools were used as assistance; the final design choices, assembly, testing, and project work were completed by our team.
+
+============================================================================================================================================
