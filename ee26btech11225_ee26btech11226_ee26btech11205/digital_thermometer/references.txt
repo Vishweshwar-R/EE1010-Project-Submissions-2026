@@ -1,0 +1,23 @@
+==================================================
+EE1010 PT 100 Project Submission - References
+==================================================
+
+1. Circuit assembly 
+   - Circuit diagram: From GVV sir's git repo.
+
+2. Testing and troubleshooting
+   - Digital thermometer: Used to compare and check temperature readings.
+   - ChatGPT and Claude: Used to assist in diagnosing issues, understanding possible causes, and suggesting troubleshooting steps.
+
+3. Final case design
+   - OpenSCAD: Used to create the final parametric 3D design of the thermometer enclosure.
+
+4. AI-assisted modelling
+   - Claude and Meshy AI: Used to assist with 3D modelling ideas and modifications to the OpenSCAD design/code.
+
+5. Report preparation
+   - ChatGPT: Used as writing assistance, to organise and refine selected report sections.
+
+Note: AI tools were used as assistance; the final design choices, assembly, testing, and project work were completed by our team.
+
+============================================================================================================================================
