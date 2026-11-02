@@ -1,0 +1,14 @@
+==========================================================================================================================================
+EE1010 UGV_part-1 Submission - References
+============================================================================================================================================
+
+1. Circuit assembly 
+   - Circuit diagram: Reference From GVV sir's git repo and Claude .
+
+2. Testing and troubleshooting
+   - ChatGPT and Claude: Used to assist in diagnosing issues, understanding possible causes, and suggesting troubleshooting steps.
+
+3. Report preparation
+   - ChatGPT: Used as writing assistance, to organise and refine selected report sections.
+
+============================================================================================================================================
