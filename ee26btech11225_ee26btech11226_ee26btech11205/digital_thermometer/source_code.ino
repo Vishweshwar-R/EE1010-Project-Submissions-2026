@@ -1,17 +1,21 @@
 #include <LiquidCrystal.h>
 
-LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
+LiquidCrystal lcd(12,11, 5, 4, 3, 2);
 
 const int sensorPin = A0;
-const float Vcc = 4.70;        // Measured supply rail
-const float R_fixed = 119.0;  // Measured reference resistor
+const float Vcc = 5.08; 
+
+// Custom LSQ Quadratic Coefficients (T = a*X^2 + b*X + c)
+const float a = 170.92;
+const float b =  -627.58;
+const float c = 537.54;
 
 void setup() {
   lcd.begin(16, 2);
 }
 
 void loop() {
-  // 1. Oversample 16 readings
+  // 1. Oversample 16 ADC readings for noise reduction
   long adcSum = 0;
   for (int i = 0; i < 16; i++) {
     adcSum += analogRead(sensorPin);
@@ -19,29 +23,23 @@ void loop() {
   }
   float avgADC = (float)adcSum / 16.0;
 
-  // 2. Voltage across PT100
+  // 2. Convert raw ADC average to voltage X
   float X = avgADC * (Vcc / 1023.0);
 
-  // 3. Calculated PT100 resistance: R_pt = R_fixed * (X / (Vcc - X))
-  float R_pt = R_fixed * (X / (Vcc - X));
+  // 3. Compute exact temperature using your custom LSQ model
+  float tempC = (a * X * X) + (b * X) + c;
 
-  // 4. Standard PT100 conversion (approx 0.3851 Ohms per °C)
-  float tempC = (R_pt - 100.0) / 0.3851;
-
-  // 5. Display Voltage and Resistance on line 1, Temp on line 2
+  // 4. Update LCD Display
   lcd.setCursor(0, 0);
-  lcd.print("V:");
-  lcd.print(X, 2);
-  lcd.print("V R:");
-  lcd.print(R_pt, 1);
-  lcd.print((char)244); // Ohm symbol / alt code
+  lcd.print("V: ");
+  lcd.print(X, 6);
+  lcd.print("V   ");
 
   lcd.setCursor(0, 1);
   lcd.print("Temp: ");
-  lcd.print(tempC, 1);
+  lcd.print(tempC, 2);
   lcd.print(" ");
-  lcd.write(223);
+  lcd.write(223); 
   lcd.print("C   ");
 
-  delay(400);
-}
+  delay(1000);}
